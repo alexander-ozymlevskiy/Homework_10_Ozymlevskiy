@@ -13,7 +13,6 @@
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,52 +24,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon {
+  font-family: "icomoon";
+  position: absolute;
+  color: #fff;
+  background-color: #2aacc8;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+}
+
 .icon-responsive-design:before {
-  font-family: "icomoon";
   content: "\e900";
-  position: absolute;
-  color: #fff;
-  background-color: #2aacc8;
-  border-radius: 50%;
-  font-size: 20px;
-  padding: 10px;
 }
+
 .icon-ready-for-coding:before {
-  font-family: "icomoon";
   content: "\e901";
+}
+
+.icon-download-psd::before {
+  font-family: "icomoon";
   position: absolute;
   color: #fff;
-  background-color: #2aacc8;
-  border-radius: 50%;
-  font-size: 20px;
-  padding: 10px;
-}
-.icon-download-psd:before {
-  font-family: "icomoon";
-  content: "\e902";
-  position: absolute;
   font-size: 28px;
   left: 18px;
-  color: #fff;
+  content: "\e902";
 }
 
 .icon-fully-layerd-psd:before {
-  font-family: "icomoon";
   content: "\e903";
-  position: absolute;
-  color: #fff;
-  background-color: #2aacc8;
-  border-radius: 50%;
-  font-size: 20px;
-  padding: 10px;
 }
+
 .icon-clean-theme:before {
-  font-family: "icomoon";
   content: "\e904";
-  position: absolute;
-  color: #fff;
-  background-color: #2aacc8;
-  border-radius: 50%;
+}
+
+.icon-large {
   font-size: 30px;
   padding: 5px;
 }

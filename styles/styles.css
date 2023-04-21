@@ -10,15 +10,17 @@ body {
 
 .header {
   background-color: #e7ebf1;
-  height: 120px;
 }
 
-.header-items {
+.container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   width: 1000px;
-  height: 100%;
+}
+
+.logo {
+  display: flex;
   align-items: center;
 }
 
@@ -32,6 +34,8 @@ ul {
 
 .nav-items {
   display: flex;
+  align-items: center;
+  height: 120px;
   justify-content: space-between;
   width: 640px;
 }
@@ -117,7 +121,7 @@ ul {
   left: 93px;
 }
 
-.container {
+.banner-items {
   display: flex;
   align-items: center;
   background-color: #81e3ed;
@@ -125,9 +129,7 @@ ul {
 }
 
 .banner {
-  width: 1000px;
   height: 440px;
-  margin: 0 auto;
   background-color: #e05936;
   background-image: url("../img/cup.png"), url("../img/comments.png");
   background-repeat: no-repeat;
@@ -142,21 +144,11 @@ ul {
   background-color: blue;
 }
 
-.banner-slick {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.slick-dots li button {
-  width: 30px;
-  height: 30px;
-}
-
 .banner-info {
   padding-top: 90px;
   padding-left: 60px;
   width: 369px;
-  height: 242px;
+  min-height: 242px;
   font-size: 50px;
   color: #fff;
   font-weight: 700;
@@ -167,13 +159,6 @@ ul {
   background-color: #e7ebf1;
   min-height: 301px;
   align-items: center;
-}
-
-.content-inner {
-  display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  margin: 0 auto;
 }
 
 .card {
@@ -199,16 +184,22 @@ ul {
   margin-bottom: 25px;
 }
 
-.read-more-icon {
-  font-weight: 700;
-  margin-right: 9px;
-  font-size: 13px;
-  color: #000;
+.right-arrow-icon::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-image: url("../img/right-arrow-icon.svg");
+  background-position: center;
+  left: 0;
+  bottom: 4px;
 }
 
 .read-more-link {
+  position: relative;
   text-decoration: none;
   color: #2aacc8;
+  padding-left: 15px;
   font-size: 13px;
   line-height: 1.5;
 }
@@ -218,20 +209,15 @@ ul {
   color: #3385a8;
 }
 
-.container-download-psd {
+.block-download-psd {
   display: flex;
   align-items: center;
   min-height: 230px;
 }
 
 .download-psd {
-  display: flex;
-  justify-content: space-between;
   border: 1px solid #81e3ed;
   background-color: #e8fcfe;
-  margin: 0 auto;
-  width: 1000px;
-  align-items: center;
   min-height: 140px;
   padding: 30px;
 }
@@ -271,16 +257,10 @@ ul {
 }
 
 .footer {
-  background-color: #e7ebf1;
-}
-
-.footer-container {
   display: flex;
-  justify-content: space-between;
-  width: 1000px;
+  background-color: #e7ebf1;
   min-height: 93px;
   align-items: center;
-  margin: 0 auto;
 }
 
 .footer-info {
