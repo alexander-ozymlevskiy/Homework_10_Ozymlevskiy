@@ -13,14 +13,14 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1030px;
+  padding: 0 15px;
 }
 
-.logo {
+.container-inner {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -155,10 +155,9 @@ ul {
 }
 
 .content {
-  display: flex;
   background-color: #e7ebf1;
   min-height: 301px;
-  align-items: center;
+  padding: 55px 0;
 }
 
 .card {
@@ -210,12 +209,13 @@ ul {
 }
 
 .block-download-psd {
-  display: flex;
-  align-items: center;
   min-height: 230px;
+  padding: 47px 0;
 }
 
 .download-psd {
+  display: flex;
+  justify-content: space-between;
   border: 1px solid #81e3ed;
   background-color: #e8fcfe;
   min-height: 140px;
@@ -257,10 +257,8 @@ ul {
 }
 
 .footer {
-  display: flex;
   background-color: #e7ebf1;
-  min-height: 93px;
-  align-items: center;
+  padding: 30px 0;
 }
 
 .footer-info {
